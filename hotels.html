@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels - StayEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">StayEasy</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hotels.html" class="active">Hotels</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Find Your Hotel</h2>
+            <div class="search-filters">
+                <input type="text" id="searchInput" placeholder="Search hotel by name..." class="search-input">
+                
+                <select id="locationFilter" class="filter-select">
+                    <option value="">All Locations</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                </select>
+                
+                <input type="number" id="priceFilter" placeholder="Max Price" class="filter-input">
+                
+                <button onclick="filterHotels()" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Display Section -->
+    <section class="hotels-section">
+        <div class="container">
+            <div id="hotelsContainer" class="hotels-grid">
+                <!-- Hotels will be displayed here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Display hotels when page loads
+        displayHotels();
+    </script>
+</body>
+</html>

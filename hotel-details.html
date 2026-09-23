@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details - StayEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">StayEasy</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hotel Details Section -->
+    <section class="details-section">
+        <div class="container">
+            <div id="hotelDetails">
+                <!-- Hotel details will be displayed here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Rooms Section -->
+    <section class="rooms-section">
+        <div class="container">
+            <h2>Available Rooms</h2>
+            <div id="roomsContainer">
+                <!-- Rooms will be displayed here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Display hotel details and rooms when page loads
+        displayHotelDetails();
+        displayRooms();
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings - StayEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">StayEasy</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="bookings.html" class="active">My Bookings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bookings Section -->
+    <section class="bookings-section">
+        <div class="container">
+            <h2>My Booking History</h2>
+            <div id="bookingsContainer">
+                <!-- Bookings will be displayed here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Display bookings when page loads
+        displayBookings();
+    </script>
+</body>
+</html>

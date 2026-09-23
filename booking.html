@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room - StayEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">StayEasy</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <h2>Book Your Room</h2>
+            
+            <!-- Selected Hotel and Room Info -->
+            <div id="bookingInfo" class="booking-info">
+                <!-- Hotel and room info will be displayed here -->
+            </div>
+
+            <!-- Booking Form -->
+            <div class="booking-form">
+                <h3>Enter Booking Details</h3>
+                <form id="bookingFormElement">
+                    <div class="form-group">
+                        <label>User ID:</label>
+                        <input type="number" id="userId" required placeholder="Enter your ID (e.g., 101)">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Check-in Date:</label>
+                        <input type="date" id="checkInDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Check-out Date:</label>
+                        <input type="date" id="checkOutDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number of Guests:</label>
+                        <input type="number" id="guests" required min="1" placeholder="Enter number of guests">
+                    </div>
+
+                    <button type="button" onclick="calculateTotal()" class="btn btn-secondary">Calculate Total</button>
+
+                    <div id="totalAmount" class="total-amount">
+                        <!-- Total amount will be displayed here -->
+                    </div>
+
+                    <button type="button" onclick="confirmBooking()" class="btn btn-primary">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Display booking info when page loads
+        displayBookingInfo();
+    </script>
+</body>
+</html>

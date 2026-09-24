@@ -1,3 +1,6 @@
+# StayEasy – Hotel Booking System
+
+🌐 **Live Demo:** [Visit StayEasy Hotel Booking System](https://brilliant-taffy-be5d3c.netlify.app)
 # 🏨 Hotel Booking System
 
 A simple and beginner-friendly hotel booking website built as a college project. This system demonstrates core concepts of hotel management, room booking, and user interaction using vanilla HTML, CSS, and JavaScript.
